@@ -1,0 +1,6 @@
+@BrogramApi_HostAddress = http://localhost:5096
+
+GET {{BrogramApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
