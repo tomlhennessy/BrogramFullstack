@@ -1,0 +1,66 @@
+# ========== BACKEND (BrogramApi) ==========
+
+# Build & Runtime
+BrogramApi/bin/
+BrogramApi/obj/
+BrogramApi/publish/
+BrogramApi/*.db
+
+# Entity Framework Migrations (optional: remove if you want to keep migrations)
+BrogramApi/Migrations/
+
+# Configs & Secrets
+BrogramApi/.vscode/
+BrogramApi/appsettings.Development.json
+BrogramApi/appsettings.Production.json
+BrogramApi/appsettings.Staging.json
+BrogramApi/appsettings.Local.json
+
+# User-specific files (VS settings)
+BrogramApi/*.suo
+BrogramApi/*.user
+BrogramApi/*.userosscache
+
+# ========== FRONTEND (BrogramFE) ==========
+
+# Build Output
+BrogramFE/.next/
+BrogramFE/out/
+BrogramFE/build/
+
+# Dependencies
+BrogramFE/node_modules/
+
+# Environment Variables / Secrets
+BrogramFE/.env*
+.env*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vercel (if you're deploying there)
+BrogramFE/.vercel/
+
+# ========== GLOBAL ==========
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# SSL Keys / Certificates
+*.pem
+
+# IDE / Editor Configs
+.vscode/
+.idea/
+*.sln.docstates
