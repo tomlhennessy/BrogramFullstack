@@ -2,6 +2,9 @@ using BrogramApi.Data;
 using BrogramApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using BrogramApi.Repositories.Interfaces;
+using BrogramApi.Repositories.Implementations;
+using BrogramApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +20,10 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+// Register Repositories
+builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
+// Register Services
+builder.Services.AddScoped<WorkoutService>();
 
 var app = builder.Build();
 
